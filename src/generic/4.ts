@@ -14,15 +14,11 @@
 //   }
 // }
 
-interface ComponentProps {
-  // загальні властивості
-}
-
-class Component<T extends ComponentProps> {
+class Component<T> {
   constructor(public props: T) {}
 }
 
-interface PageProps extends ComponentProps {
+interface PageProps {
   title: string;
 }
 
